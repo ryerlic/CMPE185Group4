@@ -1,0 +1,13 @@
+<launch>
+    <!-- <include file="$(find yolo_depth_locator)/launch/realsensecustom.launch" /> -->
+
+    <include file="$(find dn_translate)/launch/detection.launch" />
+
+
+    <node
+    pkg="yolo_depth_locator"
+    type="yolo_depth_locator_cpp"
+    name="XYZLocator"
+    output="screen"
+    />
+</launch>

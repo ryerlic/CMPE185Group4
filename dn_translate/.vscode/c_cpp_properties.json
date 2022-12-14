@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/melodic/include/**",
+        "/home/ryan/catkin_ws/devel/include/**",
+        "/home/ryan/catkin_ws/src/boris/boris_imu/include/**",
+        "/home/ryan/catkin_ws/src/darknet_ros/darknet_ros/include/**",
+        "/home/ryan/catkin_ws/src/navstack/include/**",
+        "/home/ryan/catkin_ws/src/simple_navigation_goals/include/**",
+        "/usr/include/**",
+        "/home/ryan/catkin_ws/src/boris/dn_translate/include/**",
+        "/home/ryan/alexdark/DarkHelp/src-lib/**",
+        "/home/ryan/alexdark/DarkHelp/build/src-lib/**",
+        "/home/ryan/alexdark/DarkHelp/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

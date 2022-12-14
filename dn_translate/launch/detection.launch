@@ -1,0 +1,14 @@
+<launch>
+    <arg name="image" default="/camera/color/image_raw" />
+    <arg name="cfg" default="$(find dn_translate)/model/litter.cfg" />
+    <arg name="wts" default="$(find dn_translate)/model/litter_best.weights"  />
+    <arg name="name" default="$(find dn_translate)/model/train.names"  />
+
+
+    <node pkg="dn_translate" type="dn_translate" name="YOLODetection" output="screen" >
+        <param name = "camera" value= "$(arg image)" />
+        <param name = "config_file" value="$(arg cfg)"  />
+        <param name = "weights_file" value="$(arg wts)"  />
+        <param name = "names_file" value="$(arg name)" />
+    </node>
+</launch>
